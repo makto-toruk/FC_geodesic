@@ -8,15 +8,19 @@ The code has been tested using Python 3. Install all requirements using
 ```
 pip3 install -r requirements.txt
 ```
-To obtain distance matrices based on Pearson dissimilarity and Geodesic distance,
+
+The main code to compute the geodesic distance measure is [here](https://github.com/makto-toruk/FC_geodesic/blob/master/utils/distance_FC/distance_FC.py).
+
+To run analysis on the toy data, run the following commands:
+* Compute distance matrices based on Pearson dissimilarity and Geodesic distance,
 ```
 python3 get_dist_mtx.py -d $PWD -c1 condition1 -c2 condition1 -t demo
 ```
-To obtain accuracy based on each distance matrix,
+* Compute accuracy based on each distance matrix,
 ```
 python3 get_accuracy.py -d $PWD -c1 condition1 -c2 condition1 -t demo
 ```
-To plot the results, see `plot_results.ipynb`. (Make sure to change `HOME_DIR` to your current working directory.) You can also view the notebook [here.](https://nbviewer.jupyter.org/github/makto-toruk/FC_geodesic/blob/master/plot_results.ipynb)
+* Plot the results using `plot_results.ipynb`. (Make sure to change `HOME_DIR` to your current working directory.) You can also view the notebook [here.](https://nbviewer.jupyter.org/github/makto-toruk/FC_geodesic/blob/master/plot_results.ipynb)
 
 ## Figures
 
