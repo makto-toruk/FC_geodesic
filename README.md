@@ -1,5 +1,22 @@
-# Comparing Functional Connectivity Matrices: 
-# A Geometry-Aware Approach applied to Participant Identification
+# Comparing Functional Connectivity Matrices: <br/>A Geometry-Aware Approach applied to Participant Identification
+
+## Data
+Toy data for easy use of code is included in the `data/condition1` folder. The data includes two FC matrices (with keys `LR1` and `RL1`) of size `300 x 300` for `N=20` subjects.
+
+## Code
+The code has been tested using Python 3. Install all requirements using
+```
+pip3 install -r requirements.txt
+```
+To obtain distance matrices based on Pearson dissimilarity and Geodesic distance,
+```
+python3 get_dist_mtx.py -d $PWD -c1 condition1 -c2 condition1 -t demo
+```
+To obtain accuracy based on each distance matrix,
+```
+python3 get_accuracy.py -d $PWD -c1 condition1 -c2 condition1 -t demo
+```
+To plot the results, see `plot_results.ipynb`
 
 ## Figures
 
