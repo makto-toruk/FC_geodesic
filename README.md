@@ -16,7 +16,7 @@ To obtain accuracy based on each distance matrix,
 ```
 python3 get_accuracy.py -d $PWD -c1 condition1 -c2 condition1 -t demo
 ```
-To plot the results, see `plot_results.ipynb`
+To plot the results, see `plot_results.ipynb`. (Make sure to change `HOME_DIR` to your current working directory.)
 
 ## Figures
 
