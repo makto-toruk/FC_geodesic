@@ -16,7 +16,7 @@ To obtain accuracy based on each distance matrix,
 ```
 python3 get_accuracy.py -d $PWD -c1 condition1 -c2 condition1 -t demo
 ```
-To plot the results, see `plot_results.ipynb`. (Make sure to change `HOME_DIR` to your current working directory.)
+To plot the results, see `plot_results.ipynb`. (Make sure to change `HOME_DIR` to your current working directory.) You can also view the notebook [here.](https://nbviewer.jupyter.org/github/makto-toruk/FC_geodesic/blob/master/plot_results.ipynb)
 
 ## Figures
 
