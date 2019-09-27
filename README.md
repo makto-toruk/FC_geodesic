@@ -10,6 +10,19 @@ pip3 install -r requirements.txt
 ```
 
 The main code to compute the geodesic distance measure is [here](https://github.com/makto-toruk/FC_geodesic/blob/master/utils/distance_FC/distance_FC.py).
+To compute the geodesic distance between two FC matrices FC1 and FC2,
+```
+import sys
+# add distance folder to path
+UTILS_DIR = 'utils/distance_FC'
+sys.path.insert(0, UTILS_DIR)
+from distance_FC import distance_FC
+dist = distance_FC(FC1, FC2)
+# geodesic distance
+d_geodesic = dist.geodesic()
+# pearson dissimilarity
+d_pearson = dist.pearson()
+```
 
 To run analysis on the toy data, run the following commands:
 * Compute distance matrices based on Pearson dissimilarity and Geodesic distance,
